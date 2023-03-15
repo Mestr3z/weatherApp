@@ -1,0 +1,33 @@
+.app {
+  text-align: center;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    input {
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #0077be;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #005d99;
+      }
+    }
+  }
+}
