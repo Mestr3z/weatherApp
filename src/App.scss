@@ -1,33 +1,123 @@
 .app {
+  z-index: 1;
   text-align: center;
-
+  
+  
   h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
     margin-top: 0;
   }
 
   .search-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
 
     input {
-      padding: 5px;
-      margin-right: 10px;
-      border-radius: 5px;
+      font-size: 1.5rem;
+      padding: 1rem;
       border: none;
+      border-radius: 30px;
+      margin-bottom: 1rem;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     button {
-      padding: 5px 10px;
-      border-radius: 5px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: #f7ca18;
+      color: #1e272e;
+      padding: 1rem 2rem;
       border: none;
-      background-color: #0077be;
-      color: white;
+      border-radius: 30px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
       cursor: pointer;
 
       &:hover {
-        background-color: #005d99;
+        background-color: #f5b041;
       }
+    }
+  }
+
+
+  .recommendation-container {
+    background-color: #1abc9c;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+  
+    &.cold {
+      background-color: #2980b9;
+  
+      p {
+        font-weight: bold;
+      }
+    }
+  
+    &.warm {
+      background-color: #f1c40f;
+  
+      p {
+        font-style: italic;
+      }
+    }
+  
+    &.hot {
+      background-color: #c0392b;
+  
+      p {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .search-container {
+      flex-direction: row;
+
+      input {
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .app {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .search-container {
+      justify-content: center;
+
+      input {
+        margin-right: 2rem;
+      }
+    }
+
+    .recommendation-container {
+      margin:0 auto;
+      max-width:80%;
+      transition: linear 2s;
     }
   }
 }
