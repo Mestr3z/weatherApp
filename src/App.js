@@ -3,7 +3,9 @@ import SearchBar from "./components/searchBar.js";
 import Weather from "./components/weather.js";
 import Recommendation from "./components/recommendation.js";
 import "./App.scss";
-
+import "./components/recommendation.scss";
+import "./components/searchBar.scss";
+import "./components/weather.scss";
 
 
 function App() {
