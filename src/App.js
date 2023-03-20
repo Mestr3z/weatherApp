@@ -4,6 +4,8 @@ import Weather from "./components/weather.js";
 import Recommendation from "./components/recommendation.js";
 import "./App.scss";
 
+
+
 function App() {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
