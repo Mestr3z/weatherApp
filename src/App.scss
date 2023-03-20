@@ -42,50 +42,7 @@
   }
 
 
-  .recommendation-container {
-    background-color: #1abc9c;
-    color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 2rem;
   
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-  
-    p {
-      font-size: 1.5rem;
-      margin: 1rem 0;
-    }
-  
-    &.cold {
-      background-color: #2980b9;
-  
-      p {
-        font-weight: bold;
-      }
-    }
-  
-    &.warm {
-      background-color: #f1c40f;
-  
-      p {
-        font-style: italic;
-      }
-    }
-  
-    &.hot {
-      background-color: #c0392b;
-  
-      p {
-        text-decoration: underline;
-      }
-    }
-  }
 
   @media screen and (min-width: 768px) {
     .search-container {
@@ -114,11 +71,7 @@
       }
     }
 
-    .recommendation-container {
-      margin:0 auto;
-      max-width:80%;
-      transition: linear 2s;
-    }
+    
   }
 }
 
