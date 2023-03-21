@@ -10,7 +10,7 @@ const SearchBar = ({ onSearch }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(city);
+    onSearch(city.trim());
     setCity('');
   };
 
