@@ -5,7 +5,7 @@ const Recommendation = ({ weatherData }) => {
   const temperature = Math.round(weatherData.main.temp);
   const weather = weatherData.weather[0].main.toLowerCase();
   const isCold = temperature < 0;
-  const isWarm = temperature >= 10 && temperature <= 15;
+  const isWarm = temperature > 10 && temperature <= 15;
   const isHot = temperature > 25;
   const isMedium = temperature > 1 && temperature <= 10;
 
