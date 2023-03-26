@@ -6,6 +6,7 @@ const Recommendation = ({ weatherData }) => {
   const weather = weatherData.weather[0].main.toLowerCase();
   const isCold = temperature < 0;
   const isWarm = temperature > 10 && temperature <= 15;
+  const isLittleHot = temperature > 15 && temperature <25;
   const isHot = temperature > 25;
   const isMedium = temperature > 1 && temperature < 10;
 
@@ -19,6 +20,7 @@ const Recommendation = ({ weatherData }) => {
         {isCold && "На улице холодно. Наденьте пальто, шапку и теплые ботинки."}
         {isMedium && "На улице прохладно. Наденьте кофту, легкую куртку и удобную обувь."}
         {isWarm && "На улице тепло. Наденьте штаны, футболку и легкую кофту"}
+        {isLittleHot && "На улице жарковато. Наденьте тонкие штаны и рубашку, футболку и кеды"}
         {isHot && "На улице жарко. Наденьте легкую и свободную одежду. Например, футболку и шорты."}
       </p>
     </div>
