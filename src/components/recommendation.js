@@ -8,7 +8,7 @@ const Recommendation = ({ weatherData }) => {
   const isWarm = temperature > 10 && temperature <= 15;
   const isLittleHot = temperature > 15 && temperature <25;
   const isHot = temperature > 25;
-  const isMedium = temperature > 1 && temperature < 10;
+  const isMedium = temperature >= 1 && temperature < 10;
 
   return (
     <div className="recommendation-container">
